@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiyun.cday02.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="30dp">
+
+         <RadioButton
+             android:id="@+id/activity_main_movies"
+             android:button="@null"
+             android:text="电影"
+             android:checked="true"
+             android:background="@drawable/movies_cinema_select"
+             android:gravity="center_horizontal"
+             android:textSize="20dp"
+             android:textColor="#fff"
+             android:layout_width="70dp"
+             android:layout_height="wrap_content" />
+
+            <RadioButton
+
+                android:id="@+id/activity_main_Cinema"
+                android:button="@null"
+                android:text="影院"
+                android:background="@drawable/movies_cinema_select"
+                android:gravity="center_horizontal"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
